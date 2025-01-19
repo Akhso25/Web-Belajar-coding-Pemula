@@ -1,0 +1,199 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100%;
+  background: #007BFF;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.sidebar .close-btn {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+main section {
+  margin: 20px 0;
+}
+
+main h2 {
+  margin-bottom: 10px;
+}
+
+/* Language Sections */
+.language-logo {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px 0;
+}
+
+.next-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.css-link { background-color: #ff6600; }
+.js-link { background-color: #f0db4f; }
+.python-link { background-color: #306998; }
+.php-link { background-color: #4F5D95; }
+.c-link { background-color: #A8B9CC; }
+.cpp-link { background-color: #00599C; }
+.contact-link { background-color: #28a745; }
+
+/* Home Section */
+.home-section {
+  text-align: center;
+}
+
+.home-section p {
+  margin: 10px 0;
+}
+
+/* Start Learning Section */
+.start-learning {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Language Logos */
+.language-logo {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.section-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Membuat ikon bulat */
+    background-color: #f0f0f0; /* Latar belakang abu-abu */
+    color: #000; /* Warna teks hitam */
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 10s, color 10s; /* Animasi latar belakang dan teks selama 10 detik */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Efek pembesaran saat hover */
+}
+
+.social-icons a:active {
+    transform: scale(0.95); /* Efek ketika ikon ditekan */
+    background-color: #000; /* Mengubah latar belakang menjadi hitam saat diklik */
+    color: #fff; /* Mengubah warna teks menjadi putih saat diklik */
+}
+
+.social-icons a.instagram {
+    background-color: #f0f0f0; /* Latar belakang yang konsisten dengan ikon lainnya */
+    color: #000; /* Warna teks hitam */
+}
+
+.social-icons a.instagram:active {
+    background-color: #000; /* Latar belakang hitam penuh saat diklik */
+    color: #fff; /* Mengubah warna teks menjadi putih saat diklik */
+}
